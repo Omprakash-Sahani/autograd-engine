@@ -56,7 +56,39 @@ How do dynamic computation graphs influence:
 * No GPU acceleration
 * Limited operator support (initial phase)
 
-## 7. Long-Term Direction
+## 7. Ecosystem Integration
+
+autograd-engine provides a minimal, transparent gradient computation core used for controlled experimentation.
+
+It is intended to:
+
+* Serve as a computation backend for distml-core in distributed optimization studies
+* Be benchmarked using ml-benchmark-suite for memory and backward-pass efficiency analysis
+* Support attention experiments in scalable-attention-study when controlled gradient behavior is required
+
+This component focuses on understanding and exposing the mechanics of automatic differentiation in isolation from high-level frameworks.
+
+## 8. Implementation Roadmap
+
+### Phase 1
+
+* Core minimal functionality
+* Controlled synthetic experiments
+* Basic metric logging
+  
+### Phase 2
+
+* Performance benchmarking
+* Ablation studies
+* Architectural refinements
+
+### Phase 3
+
+* Scalability extensions
+* Integration with other repositories
+* Extended experimental evaluation
+
+## 9. Long-Term Direction
 
 * Static graph comparison
 * Memory reuse strategies
